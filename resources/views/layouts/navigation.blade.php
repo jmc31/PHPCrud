@@ -16,12 +16,12 @@
                         <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                             {{ __('Dashboard') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('vehicles.index')" :active="request()->routeIs('vehicles.*')">
+                        <x-nav-link :href="route('vehicles.index')" :active="request()->routeIs('vehicles.*')" class="px-4">
                             {{ __('Vehicles') }}
                         </x-nav-link>
                     </div>
                 @endauth
-                <x-nav-link :href="route('meet-the-team')" :active="request()->routeIs('meet-the-team')">
+                <x-nav-link :href="route('meet-the-team')" :active="request()->routeIs('meet-the-team')" class="px-4">
                     {{ __('Meet the Team') }}
                 </x-nav-link>
             </div>
